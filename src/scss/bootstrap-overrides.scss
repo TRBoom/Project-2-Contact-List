@@ -1,0 +1,15 @@
+// Bootstrap Theme Customization
+
+
+//////////////////////////////////////
+// Boostrap variable overrides here
+//////////////////////////////////////
+
+$theme-colors: (
+    "contact-card": #322b35
+);
+
+/////////////////////////////////////
+
+// Include Bootstrap SASS here. This will allow our overrides to take effect.
+@import '~bootstrap/scss/bootstrap';

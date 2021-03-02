@@ -1,0 +1,86 @@
+
+
+header {
+  color: #ffeffe;
+  border-bottom: 1px solid black;
+}
+
+form {
+  color: #ffeffe;
+}
+
+// Contacts
+.contact {
+  min-height: 200px;
+  padding: 10px 20px;
+  border: 8px rgb(0, 0, 0) solid;
+  display: flex;
+  flex-direction: column;
+  color: #ffeffe;
+}
+
+.contact .controls {
+  margin-top: auto;
+  align-self: center;
+}
+.modal-title{
+  color: #ffeffe;
+}
+.contact .contact-header {
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.contact .contact-notes {
+  font-size: .9em;
+  font-family: 'Arial';
+  line-height: 1.5rem;
+
+}
+.contact .contact-title {
+  font-size: 1.3em;
+  font-family: 'Arial';
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact .contact-text {
+  font-size: 1.3em;
+  font-family: 'Arial';
+}
+
+.btn.btn-delete {
+  font-size: 1.6rem;
+  color: $text-muted;
+  margin-left: 10px;
+}
+
+.btn.btn-edit {
+  font-size: 1rem;
+  border: 1px dashed $text-muted;
+  color: $text-muted;
+}
+
+.btn:hover {
+  color: theme-color('dark');
+}
+
+#contactModal textarea, #contactModal input {
+  background-color: transparent;
+  color: #ffeffe;
+}
+
+#contactModal input[type=text] {
+  border:solid white;
+  color: #ffeffe;
+}
+
+#contactModal textarea {
+  border: solid white;
+  min-height: 125px;
+  color: #ffeffe;
+}
+
+.dark {
+  background-color: #1f1d20;
+}

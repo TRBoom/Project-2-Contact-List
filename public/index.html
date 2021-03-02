@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/css/main.css">
+    <title>Contact List App</title>
+</head>
+
+<body class="dark">
+    <div class="container">
+        <header id="main-header" class="d-flex justify-content-between align-items-center py-3">
+            <h1>Contact App</h1>
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#contactModal">Add
+                Contact</button>
+        </header>
+        <main class="mt-4">
+            <div id="searchSection" class="row justify-content-center">
+                <div class="col-6">
+                    <form id="searchForm" class="d-flex">
+                        <input type="search" class="form-control" name="search" placeholder="Search contacts">
+                        <button type="submit" class="btn btn-primary ml-1">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div id="contactContainer" class="row"></div>
+        </main>
+    </div>
+    
+    <div id="contactModal" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-contact-card">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">My Contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" tabindex="-1">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <input type="hidden" value="" name="contactId">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" name="contactFirst" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" name="contactLast" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="text" name="contactPhone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="contactEmail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth</label>
+                            <input type="date" id="datefield" name="contactBday" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Type</label>
+                            <select name="contactType" class="form-control">
+                                <option value="Land Line">Land Line</option>
+                                <option value="Cell Phone">Cell Phone</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Notes</label>
+                            <textarea name="contactNotes" id="" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="submit" class="btn btn-secondary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./build/javascript/main.js"></script>
+</body>
+
+</html>
